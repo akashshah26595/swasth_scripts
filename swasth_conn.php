@@ -1,13 +1,15 @@
 <?php
-//$server = "mysql.hostinger.in";
-//$username = "u354229557_ggmu";
-//$password = "manutd710";
-//$db = "u354229557_swast";
+$server = "mysql.hostinger.in";
+$username = "u354229557_ggmu";
+$password = "manutd710";
+$db = "u354229557_swast";
 
-$server = "localhost";
-$username = "root";
-$password = "akapaka";
-$db = "swasth";
+
+
+//$server = "localhost";
+//$username = "root";
+//$password = "akapaka";
+//$db = "swasth";
 
 $arr = array("SERVER"=>$server,"USERNAME"=>$username,"PASSWORD"=>$password,"DATABASE"=>$db);
 

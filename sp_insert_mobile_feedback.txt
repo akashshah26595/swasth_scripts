@@ -1,0 +1,23 @@
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `u354229557_swast`.`SP_insert_mobile_feedback`$$
+CREATE PROCEDURE  `u354229557_swast`.`SP_insert_mobile_feedback`(
+IN question1 varchar(100),
+IN question2 varchar(100),
+IN question3 varchar(100),
+IN question4 varchar(100),
+IN mf_timestamp datetime,
+IN card_number INT,
+IN score INT,
+IN feedback varchar(255),
+)
+BEGIN
+
+INSERT INTO mobile_feedback values(
+NULL,question1,question2,question3,
+question4,mf_timestamp,card_number,score,feedback
+);
+update user set u_credits = u_credits + 5
+where user.user_card_number = card_number;
+
+END $$
+DELIMITER ;

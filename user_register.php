@@ -8,7 +8,7 @@ $mname = isset($_POST['txtMname']) ? $_POST['txtMname'] : null;
 $lname = $_POST['txtLname'];
 $email = isset($_POST['txtEmail']) ? $_POST['txtEmail'] : null;   
 $add = $_POST['txtAdd'];
-$mob = $_POST['txtMob'];
+$mob = (int)$_POST['txtMob'];
 $age = $_POST['txtAge'];
 $gender = $_POST['rbgender'];    
 
