@@ -1,1 +1,1 @@
-Php scripts for Swasth App.
+Php and sql  scripts for Swasth App.
